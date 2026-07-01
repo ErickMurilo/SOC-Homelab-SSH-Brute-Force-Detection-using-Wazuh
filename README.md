@@ -19,3 +19,11 @@ O objetivo principal foi simular um ataque de força bruta SSH utilizando o Hydr
 # Objetivo
 
 O objetivo central deste lab foi simular um ataque real de brute force contra SSH e analisar o processo completo de detecção em um ambiente SOC.
+
+
+
+# Incident Analysis
+
+A análise completa do incidente contendo investigação dos logs, eventos correlacionados e alertas gerados pelo Wazuh está disponível no link abaixo:
+
+[Acesse o relatório completo do incidente.](https://github.com/ErickMurilo/SOC-Homelab-SSH-Brute-Force-Detection-using-Wazuh/blob/main/SSH-Brute-Force-Detection-with-Wazuh.md)
