@@ -91,42 +91,20 @@ Para aprofundar a investigação, foi analisado o documento detalhado do alerta 
 
 ## Indicadores de Comprometimento (IOCs)
 
+- Endereço IP de Origem: 10.0.2.6
+- Endereço IP de Destino: 10.0.2.5
+- Conta Alvo: erick
+- Categoria do Ataque: Brute Force via SSH
+- Ferramenta de Ataque: Hydra
 
-Source IP: 10.0.2.6
+## Mitigações
 
-Destination IP: 10.0.2.5
-
-Target User: erick
-
-Attack Type: SSH Brute Force
-
-Tool Used: Hydra
-
-
-## MITRE ATT&CK Mapping
-
-T1110 — Brute Force
-
-T1110.001 — Password Guessing
-
-## Mitigações 
-
-MFA
-
-Fail2Ban
-
-SSH Hardening
-
-Rate Limiting
-
-Strong Password Policies
+- MFA (Autenticação Multifator)
+- Fail2Ban para bloqueio automático
+- Strong Password Policies
 
 ## Conclusão
 
-attack simulation
-
-detection
-
-threat hunting
-
-SOC workflow
+Este laboratório demonstrou como ataques automatizados de SSH Brute Force podem ser identificados em um ambiente SOC utilizando Wazuh SIEM.
+A simulação permitiu observar o ciclo completo de um incidente de segurança: execução do ataque, geração de eventos, detecção em tempo real e análise dos alertas.
+Foi possível identificar padrões característicos de brute force através da correlação de logs de autenticação, frequência de tentativas e origem do tráfego.
